@@ -354,6 +354,19 @@
   @media (max-width:860px){
     .g-concept{grid-template-columns:1fr}
     .g-concept .clip{grid-row:auto;max-width:380px;width:100%;justify-self:center}
+  }
+
+  /* ===== TƯ LIỆU: mọi nhóm xếp một hàng ngang, thẻ cùng cỡ ===== */
+  .media-panel .g-trade,.media-panel .g-concept,.media-panel .g-social{
+    display:grid;grid-template-columns:none;grid-auto-flow:column;
+    grid-auto-columns:calc((100% - 64px) / 5);gap:16px;align-items:stretch;
+    overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin-bottom:0}
+  .media-panel .shot,.media-panel .clip{scroll-snap-align:start;grid-row:auto;max-width:none;width:100%;justify-self:stretch;margin:0}
+  .media-panel .shot img,.media-panel .clip video{aspect-ratio:4/5;object-fit:cover;object-position:center top}
+  .media-panel .shot .cap,.media-panel .clip .cap{padding:10px 12px 12px;font-size:12.5px}
+  .media-panel .shot .cap b,.media-panel .clip .cap b{font-size:13px}
+  @media (max-width:860px){
+    .media-panel .g-trade,.media-panel .g-concept,.media-panel .g-social{grid-auto-columns:calc((100% - 24px) / 2.4);gap:12px}
   }</style>
 
 <div class="progress" aria-hidden="true"></div>
