@@ -141,7 +141,8 @@
   .result b{font-family:var(--display);font-size:38px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1;color:var(--orange-ink);white-space:nowrap}
   .result span{font-size:14px;color:var(--muted)}
   .case.wide{grid-column:1/-1;display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:stretch}
-  .case.wide .case-body{display:flex;flex-direction:column;gap:12px;min-width:0}
+  .case.wide .case-body{position:relative;display:flex;flex-direction:column;gap:12px;min-width:0}
+  .case.wide .no{top:-14px;right:0}
   .case.wide .shot img{aspect-ratio:3/2;height:100%;object-position:center 60%}
   .case.wide .shot{align-self:stretch}
   @media (max-width:860px){.case.wide{grid-template-columns:1fr;gap:18px}.case.wide .shot{order:-1}}
@@ -559,8 +560,8 @@
           <div class="result"><b data-count>~150</b><span>cửa hàng miền Nam &amp; miền Bắc</span></div>
         </article>
         <article class="case wide" data-reveal>
-          <span class="no" aria-hidden="true">05</span>
           <div class="case-body">
+            <span class="no" aria-hidden="true">05</span>
             <span class="label">Trade · Event</span>
             <h3>Gian hàng triển lãm Gà Chiên Viên Viên tại SECC</h3>
             <p>Gian hàng giới thiệu sản phẩm và nhượng quyền Gà Chiên Viên Viên tại Trung tâm Hội chợ &amp; Triển lãm Sài Gòn (SECC), TP.HCM.</p>
